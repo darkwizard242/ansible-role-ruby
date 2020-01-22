@@ -1,0 +1,31 @@
+---
+galaxy_info:
+  role_name: ruby
+  author: Ali Muhammad
+  description: Role for dynamically installing or uninstalling ruby on Debian and EL based systems.
+  company: none
+  license: MIT
+  min_ansible_version: 2.4
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - xenial
+        - bionic
+    - name: Debian
+      versions:
+        - jessie
+        - stretch
+        - buster
+    - name: EL
+      versions:
+        - 7
+
+  galaxy_tags:
+    - ruby
+    - language
+    - programming
+    - os
+    - system
+
+dependencies: []

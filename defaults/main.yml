@@ -1,0 +1,5 @@
+---
+# defaults file for ruby
+ruby_app_debian_package: ruby-full
+ruby_app_el_package: ruby
+ruby_desired_state: present

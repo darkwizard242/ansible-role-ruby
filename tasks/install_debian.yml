@@ -1,0 +1,9 @@
+---
+# tasks file for ruby - Debian
+
+- name: Installing "{{ ruby_app_debian_package }}" on Debian systems
+  package:
+    name: "{{ ruby_app_debian_package }}"
+    state: "{{ ruby_desired_state }}"
+    force_apt_get: yes
+    update_cache: yes
