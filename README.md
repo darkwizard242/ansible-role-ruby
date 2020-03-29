@@ -2,7 +2,7 @@
 
 # Ansible Role: ruby
 
-Role to install `ruby` package on **Debian/Ubuntu** and **EL** systems. These are the default versions available in repositories and may change based on whatever is available on the default OS repositories.
+Role to install [ruby](https://www.ruby-lang.org/en/) package on **Debian/Ubuntu** and **EL** systems. These are the default versions available in repositories and may change based on whatever is available on the default OS repositories.
 
 ## Requirements
 
@@ -39,7 +39,7 @@ For default behaviour of role (i.e. installation of **ruby** package) in ansible
 ```yaml
 - hosts: servers
   roles:
-    - role: darkwizard242.ruby
+    - darkwizard242.ruby
 ```
 
 For customizing behavior of role (i.e. installation of latest **ruby** package instead of ensure it is installed ) in ansible playbooks.
@@ -47,9 +47,9 @@ For customizing behavior of role (i.e. installation of latest **ruby** package i
 ```yaml
 - hosts: servers
   roles:
-    - role: darkwizard242.ruby
-      vars:
-        ruby_desired_state: latest
+    - darkwizard242.ruby
+  vars:
+    ruby_desired_state: latest
 ```
 
 For customizing behavior of role (i.e. installation of **ruby** package in regards to EL systems) in ansible playbooks.
@@ -57,9 +57,9 @@ For customizing behavior of role (i.e. installation of **ruby** package in regar
 ```yaml
 - hosts: servers
   roles:
-    - role: darkwizard242.ruby
-      vars:
-        ruby_app_el_package: ruby
+    - darkwizard242.ruby
+  vars:
+    ruby_app_el_package: ruby
 ```
 
 ## License
