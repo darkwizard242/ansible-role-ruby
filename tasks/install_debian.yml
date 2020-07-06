@@ -1,7 +1,7 @@
 ---
-# tasks file for ruby - Debian
+# tasks file for ruby - Debian/Ubuntu Family
 
-- name: Installing "{{ ruby_app_debian_package }}" on Debian systems
+- name: Debian/Ubuntu Family | Installing {{ ruby_app_debian_package }}
   package:
     name: "{{ ruby_app_debian_package }}"
     state: "{{ ruby_desired_state }}"
