@@ -22,11 +22,11 @@ ruby_desired_state: present
 
 ### Variables table:
 
-Variable                | Value (default) | Description
------------------------ | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------
-ruby_app_debian_package | ruby-full       | Defines the app to install on Debian based systems i.e. **ruby-full**
-ruby_app_el_package     | ruby            | Defines the app to install on Enterprise Linux (Redhat/CentOS) systems i.e. **ruby**
-ruby_desired_state      | present         | Defined to dynamically chose whether to install (i.e. either `present` or `latest`) or uninstall (i.e. `absent`) the package. Defaults to `present`.
+Variable                | Description
+----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------
+ruby_app_debian_package | Defines the app to install on Debian based systems i.e. **ruby-full**
+ruby_app_el_package     | Defines the app to install on Enterprise Linux (Redhat/CentOS) systems i.e. **ruby**
+ruby_desired_state      | Defined to dynamically chose whether to install (i.e. either `present` or `latest`) or uninstall (i.e. `absent`) the package. Defaults to `present`.
 
 ## Dependencies
 
@@ -68,4 +68,4 @@ For customizing behavior of role (i.e. installation of **ruby** package in regar
 
 ## Author Information
 
-This role was created by [Ali Muhammad](https://www.linkedin.com/in/ali-muhammad-759791130/), a DevOps/CloudOps Engineer who loves to learn and contribute to Open Source community.
+This role was created by [Ali Muhammad](https://www.alimuhammad.dev/), a DevOps/CloudOps Engineer who loves to learn and contribute to Open Source community.
