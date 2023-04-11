@@ -2,7 +2,7 @@
 # tasks file for ruby - Debian/Ubuntu Family
 
 - name: Debian/Ubuntu Family | Installing {{ ruby_app_debian_package }}
-  package:
+  ansible.builtin.package:
     name: "{{ ruby_app_debian_package }}"
     state: "{{ ruby_desired_state }}"
     force_apt_get: yes
